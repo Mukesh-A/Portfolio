@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import About from "./components/About";
+import HomePage from "./components/HomePage";
+import Navbar from "./components/Navbar";
+import Startup from "./components/Startup";
+import Project from "./components/Project";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
+  /// bring flower bracket icon from https://fontawesome.com/icons/bracket-curly?s=duotone&f=classic
+  // divide home page into ratios for image placemnet
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Wait for 3 seconds
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isLoading ? (
+        <Startup />
+      ) : (
+        <>
+          <Navbar />
+          <HomePage />
+          <About />
+          <Project/>
+          <Contact/>
+          <Footer/>
+        </>
+      )}
     </div>
   );
 }
