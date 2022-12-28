@@ -4,7 +4,7 @@ const Startup = () => {
   return (
     <div className="slide-up">
       <div className="slide-up-inner">
-        <p>Mukesh . A</p>
+        <p>Select * from Mukesh . A</p>
       </div>
     </div>
   );

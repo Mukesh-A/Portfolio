@@ -1,0 +1,84 @@
+import React from "react";
+import { Link } from "react-scroll";
+import styled from "styled-components";
+export const Rightbar = ({ open }) => {
+  return (
+    <Ul open={open}>
+      <li>
+        <Link activeClass="active" smooth spy to="hero">
+          mukesh()
+        </Link>
+      </li>
+      <li>
+        <Link activeClass="active" smooth spy to="about">
+          about ()
+        </Link>
+      </li>
+      <li>
+        <Link activeClass="active" smooth spy to="project">
+          project()
+        </Link>
+      </li>
+      <li>
+        <Link activeClass="active" offset={70} smooth spy to="contact">
+          contact()
+        </Link>
+      </li>
+    </Ul>
+  );
+};
+const Ul = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 3rem;
+  /* background-color: #0e1212; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  gap: 1rem;
+  /* width: 100vw; */
+  display: flex;
+  justify-content: flex-end;
+  /* margin-top: 3rem; */
+  padding-bottom: 2rem;
+  box-shadow: 0 0 60px #0e1212;
+  /* color: #777; */
+
+  /* border: 1px solid red; */
+  li {
+    list-style: none;
+
+    color: #777;
+    padding: 18px;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: end;
+
+    cursor: pointer;
+  }
+  li .active {
+    color: white;
+  }
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+    background-color: #0e12129e;
+    /* -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5)); */
+    position: fixed;
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    padding-top: 4.5rem;
+    transition: transform 1s ease-in-out;
+    li {
+      color: white;
+      font-size:1.6rem ;
+    }
+    li .active {
+    color: #777;
+  }
+  }
+`;
