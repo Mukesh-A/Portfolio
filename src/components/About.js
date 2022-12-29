@@ -6,6 +6,20 @@ import { FiFigma } from "react-icons/fi";
 import { HiDownload } from "react-icons/hi";
 import styled from "styled-components";
 
+const arr = [
+  "HTML",
+  "CSS",
+  "Js",
+  "React Js",
+  "MongoDb",
+  "Node js",
+  "Tailwindcss",
+  "Express.Js",
+  "Solidity",
+  "Hardhat",
+  "Remix IDE",
+  "Next Js"
+];
 const About = () => {
   const mukesh = "Mukesh";
   return (
@@ -41,11 +55,18 @@ const About = () => {
         </div>
         <span className="about_description">
           // <label>I</label> completed my MCA(8CGPA) at Bangalore Institute of
-          Technology. A self taught fullstack blockchain developer. I am
+          Technology. A self taught fullstack developer. I am
           hard-working, autonomous and passionate about development. I love
           learning new things everyday and creating new projects. Hope to work
           with you soon! //
+          <br />
         </span>
+        <p>skills</p>
+        <div className="sub-div">
+          {arr.map((item) => {
+            return <span className="sub">{item}</span>;
+          })}
+        </div>
       </div>
     </Container>
   );
@@ -57,39 +78,44 @@ const Container = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;
-
+  /* justify-content:center; */
+  /* align-items:center; */
   @media (max-width: 480px) {
     flex-direction: column-reverse;
   }
-  
-    img {
-      height: 100%;
+
+  img {
+    height: 100%;
+    /* border: 1px solid red; */
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    @media (max-width: 480px) {
+      margin-left: auto;
+      height: 80%;
       /* border: 1px solid red; */
-      -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-      @media (max-width: 480px) {
-        height: 100%;
-        width: 100%;
-        margin-left: 5rem;
-        /* text-align: right; */
-      }
+
+      /* text-align: right; */
     }
   }
+
   .about_right {
-    /* height: 100%; */
+    /* height: 50%; */
     width: 50%;
     /* display: grid;
     grid-template-rows: 10% 7% 83%; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+
     padding-top: 5rem;
+    /* padding-bottom: 5rem; */
     /* align-items: end; */
     gap: 0.5rem;
     /* border: 1px solid red; */
 
     @media (max-width: 480px) {
-      height: 60%;
+      /* height: 100%; */
+      /* border: 1px solid red; */
+
       padding: 0.5rem;
       /* grid-template-rows: 10% 7% 83%; */
       /* gap: 0.5rem; */
@@ -105,7 +131,9 @@ const Container = styled.div`
 
       letter-spacing: 0.05em;
       @media (max-width: 480px) {
+        height: 6rem;
         font-size: 2.5rem;
+        /* border: 1px solid blue; */
       }
       .about_details_name {
         color: #682ae9;
@@ -116,6 +144,8 @@ const Container = styled.div`
         letter-spacing: 0.05em;
         @media (max-width: 480px) {
           font-size: 2.6rem;
+          /* height: 4.6rem; */
+
           padding: 0;
         }
       }
@@ -160,6 +190,10 @@ const Container = styled.div`
           /* padding: 0; */
         }
       }
+      @media (max-width: 480px) {
+        /* border: 1px solid blue; */
+        height: 3.7rem;
+      }
     }
     .about_description {
       /* width: 100%; */
@@ -174,8 +208,47 @@ const Container = styled.div`
       }
       @media (max-width: 480px) {
         font-size: medium;
+        padding: 0;
+        /* border: 1px solid blue; */
+        height: 13rem;
         /* height: auto; */
         /* border: 1px solid blue; */
+      }
+    }
+    p {
+      color: #dbdbdb;
+      /* height: 100vh; */
+      font-size: 1.6rem;
+      font-weight: 700;
+      padding: 0.3rem;
+
+      /* opacity:.5/; */
+      /* letter-spacing: 0.05em; */
+    }
+    .sub-div {
+      /* width: 100%; */
+      /* height: 16rem; */
+      margin-top: 1rem;
+      width: 70%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 0.6rem;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 1.1rem;
+      /*  */
+      @media (max-width: 480px) {
+        /* border: 1px solid red; */
+        /* height:1rem; */
+        font-size: 1rem;
+        width: 100%;
+        /* height: 8rem; */
+        padding: 0.2rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.7rem;
+        height: 9rem;
       }
     }
   }

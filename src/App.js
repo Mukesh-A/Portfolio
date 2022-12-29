@@ -36,7 +36,7 @@ function App() {
           <Project />
           <Contact />
           <Footer />
-          <ScrollToTop />
+          {/* <ScrollToTop /> */}
           <Navbar />
         </>
       )}

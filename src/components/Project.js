@@ -3,30 +3,31 @@ import client from "../client";
 import { AiFillGithub } from "react-icons/ai";
 import { GoBrowser } from "react-icons/go";
 import styled from "styled-components";
+import noimg from "../noimg.png";
 const Project = () => {
   const [postData, setPost] = useState(null);
 
-  useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "post"]{
-      title,
-      slug,
-      body,
-      github,
-      live,
-      mainImage{
-        asset -> {
-          _id,
-          url
-        },
-        alt
-      }
-    }`
-      )
-      .then((data) => setPost(data))
-      .catch(console.error());
-  }, []);
+  // useEffect(() => {
+  //   client
+  //     .fetch(
+  //       `*[_type == "post"]|order(_createdAt asc){
+  //     title,
+  //     slug,
+  //     body,
+  //     github,
+  //     live,
+  //     mainImage{
+  //       asset -> {
+  //         _id,
+  //         url
+  //       },
+  //       alt
+  //     }
+  //   }`
+  //     )
+  //     .then((data) => setPost(data))
+  //     .catch(console.error());
+  // }, []);
   console.log(postData);
   return (
     <Container className="project" id="project">
@@ -45,7 +46,10 @@ const Project = () => {
                   return (
                     <div className="card">
                       <div className="card_img">
-                        <img src={post.mainImage.asset.url} alt="hello" />
+                        <img
+                          src={post.mainImage?.asset.url || noimg}
+                          alt="no"
+                        />
                       </div>
                       <div className="card_body">
                         <h2 className="card_title">{post.title}</h2>
