@@ -28,12 +28,12 @@ const Project = () => {
       .then((data) => setPost(data))
       .catch(console.error());
   }, []);
-  console.log(postData);
+  // console.log(postData);
   return (
     <Container className="project" id="project">
       <div className="project-content">
         <span>
-          const Project = (<label className="project_props">Projects</label>) ⇒
+          const Projects = (<label className="project_props">Project</label>) ⇒
         </span>
         <p>﹛</p>
         <div className="containers">
@@ -44,7 +44,7 @@ const Project = () => {
                 .reverse()
                 .map((post, index) => {
                   return (
-                    <div className="card">
+                    <div className="card" key={index}>
                       <div className="card_img">
                         <img
                           src={post.mainImage?.asset.url || noimg}
@@ -100,16 +100,14 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 50px;
-    /* height: 100vh; */
+    
 
     span {
       color: #dbdbdb;
       font-size: 3rem;
       font-weight: 700;
-      /* padding:10px 50px; */
+
       @media (max-width: 480px) {
-        /* font-size: rem; */
-        /* padding-top: 0; */
         padding: 0.3rem;
       }
     }
@@ -118,23 +116,19 @@ const Container = styled.div`
       color: #222;
       font-size: 7rem;
       font-weight: 800;
-      /* padding: 0; */
       height: 100%;
       line-height: 70px;
       transform: scale(1, 1.3);
-
       text-shadow: 4px 1px rgba(133, 127, 127, 0.5);
       @media (max-width: 480px) {
         font-size: 5.5rem;
         padding: 0;
-        /* margin:0; */
       }
     }
     .project_props {
       color: #682ae9;
     }
     .bracket_end {
-      /* display: none; */
       align-self: flex-end;
       margin-bottom: 3rem;
     }
@@ -142,23 +136,17 @@ const Container = styled.div`
     .containers {
       max-width: 75%;
       margin: 0 auto;
-      /* height: 100vh; */
-      /* border: 1px solid red; */
 
       .grid {
         display: grid;
-
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3rem;
         margin: 1rem 0;
         row-gap: 2rem;
-        /* border: 1px solid red; */
+
         @media (max-width: 480px) {
           grid-template-columns: 100%;
           margin: 2rem 0;
-          /* align-items: start; */
-          /* margin-left: 1rem; */
-          /* margin:0; */
         }
 
         .card {
@@ -184,29 +172,13 @@ const Container = styled.div`
             text-align: start;
             height: 8rem;
             overflow-y: auto;
-            /* padding-top: 1rem; */
-            /* padding: 26px 20px 36px 20px; */
-
             .card_title {
-              /* font-family: 'Merriweather',
-      serif;
-  font-weight: 900;
-  text-transform: capitalize; */
-
               font-size: 1.3rem;
-              /* padding-bottom: 20px; */
             }
             span {
-              /* padding-top: 2rem; */
               font-size: 0.8rem;
               font-weight: 500;
               color: #777;
-
-              /* border: 1px solid red; */
-
-              /* padding: 0; */
-              /* line-height: normal */
-              /* line-height: 1; */
             }
           }
 
@@ -217,7 +189,6 @@ const Container = styled.div`
             gap: 1.2rem;
             justify-content: flex-end;
             align-items: center;
-            /* border: 1px solid red; */
 
             a {
               text-decoration: none;
@@ -228,13 +199,7 @@ const Container = styled.div`
               color: #777;
               font-size: 1.5rem;
               text-decoration: none;
-              /* letter-spacing: 1.1px; */
-              /* background: #0F1616; */
-              /* margin-top: 50px; */
-              /* padding: 24px 0px; */
               border-radius: 15px;
-              /* display: inline-block; */
-
               transition: all 0.3s ease-in-out;
             }
           }

@@ -1,12 +1,14 @@
 import React from "react";
 import logo from "../contactus.png";
 import styled from "styled-components";
+
 const Contact = () => {
+  console.log(process.env.REACT_APP_CONTACT);
   return (
     <Container className="contact" id="contact">
       <div className="contact-form">
         <h1>Contact Me</h1>
-        <form action={process.env.CONTACT} method="POST">
+        <form action={process.env.REACT_APP_CONTACT} method="POST">
           <input
             name="username"
             type="text"
