@@ -69,7 +69,7 @@ const Container = styled.div`
     form {
       max-width: 380px;
       padding-bottom: 3rem;
-
+      z-index: 99;
       .feedback-input {
         color: #777;
         font-family: Helvetica, Arial, sans-serif;
@@ -105,6 +105,7 @@ const Container = styled.div`
         font-size: 1.3rem;
         padding-top: 10px;
         padding-bottom: 10px;
+        z-index: 99;
         transition: all 0.2s ease-in-out;
         /* margin-top: -4px; */
         font-weight: 540;
