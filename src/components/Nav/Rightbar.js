@@ -37,7 +37,7 @@ const Ul = styled.ul`
   top: 0;
   right: 0;
   gap: 1rem;
-  z-index: 99;
+  z-index: 80;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 2rem;

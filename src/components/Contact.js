@@ -105,7 +105,7 @@ const Container = styled.div`
         font-size: 1.3rem;
         padding-top: 10px;
         padding-bottom: 10px;
-        z-index: 99;
+        z-index: 50;
         transition: all 0.2s ease-in-out;
         /* margin-top: -4px; */
         font-weight: 540;
