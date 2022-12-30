@@ -69,7 +69,7 @@ const Container = styled.div`
     form {
       max-width: 380px;
       padding-bottom: 3rem;
-      z-index: 99;
+      /* z-index: 99; */
       .feedback-input {
         color: #777;
         font-family: Helvetica, Arial, sans-serif;

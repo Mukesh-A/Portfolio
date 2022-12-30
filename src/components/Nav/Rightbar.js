@@ -32,12 +32,12 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   height: 3rem;
- 
+
   position: fixed;
   top: 0;
   right: 0;
   gap: 1rem;
-  
+  z-index: 99;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 2rem;
@@ -70,10 +70,10 @@ const Ul = styled.ul`
     transition: transform 1s ease-in-out;
     li {
       color: white;
-      font-size:1.6rem ;
+      font-size: 1.6rem;
     }
     li .active {
-    color: #777;
-  }
+      color: #777;
+    }
   }
 `;
