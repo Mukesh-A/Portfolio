@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../img1.png";
+import logo from "../img3.png";
 import styled from "styled-components";
 
 const HomePage = () => {
@@ -13,7 +13,7 @@ const HomePage = () => {
         <h3 className="fullstack">FullStack Developer</h3>
       </div>
       <div className="img-container">
-        <img className="img-to-fit" src="./img3.png" />
+        <img className="img-to-fit" src={logo} alt="Mukesh"/>
       </div>
     </Container>
   );
@@ -81,25 +81,8 @@ const Container = styled.div`
       }
     }
   }
-  /* .image {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0) 80%,
-        rgba(0, 0, 0, 0.65) 100%
-      ),
-      url(/img3.png);
-    width: 25%;
-    background-size: 370px;
-    height: 100%;
-    opacity: 0.5;
-    
-    background-position: right;
-    background-repeat: no-repeat;
-
-    -webkit-filter: drop-shadow(0px 12px 130px #682ae9);
-
-    color: white; */
+  
+   
   .img-container {
     /* border: 2px solid red; */
     justify-content: center;
@@ -113,7 +96,7 @@ const Container = styled.div`
     .img-to-fit {
       flex: 1;
       height: 100%;
-      filter: hue-rotate(90deg) brightness(90%) grayscale(10%);
+      /* filter: hue-rotate(90deg) brightness(10%) grayscale(10%); */
       @media (max-width: 480px) {
         display: none;
       }

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../contactus.png";
+import logo from "../contact.png";
 import styled from "styled-components";
 
 const Contact = () => {
@@ -45,27 +45,22 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
 
-  /* justify-content: start;  */
-  /* align-items: center; */
   gap: 5rem;
   @media (max-width: 480px) {
     flex-direction: column;
-    /* width: 100%; */
   }
 
   .contact-form {
     width: 50%;
     height: 100%;
-    /* text-align: center; */
+
     display: flex;
     flex-direction: column;
-    /* margin-top: 3rem; */
-    /* border: 1px solid red; */
+
     justify-content: end;
     align-items: center;
     gap: 3rem;
-    /* padding-top: 50vh; */
-    /* border: 1px solid red; */
+
     @media (max-width: 480px) {
       width: 100%;
       padding: 1rem;
@@ -92,8 +87,6 @@ const Container = styled.div`
         outline: 0;
       }
 
-      /* .contact-form .feedback-input:focus { border:2px solid #CC4949; } */
-
       textarea {
         height: 150px;
         line-height: 150%;
@@ -119,21 +112,19 @@ const Container = styled.div`
       }
     }
   }
-  /* .contact-form [type="submit"]:hover { ; } */
 
   .contact-img {
     width: 50%;
     position: relative;
-    /* border: 1px solid red; */
+
     height: 100%;
 
     img {
-      /* border: 1px solid red; */
       position: absolute;
       bottom: 0;
       right: 10px;
       width: 35rem;
-      -webkit-filter: drop-shadow(0px -22px 150px #682ae9);
+      -webkit-filter: drop-shadow(0px -22px 100px #682ae9);
       @media (max-width: 480px) {
         height: 80%;
         width: 100%;

@@ -23,7 +23,7 @@ const ScrollToTop = () => {
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
 
-    // when we r keep listeniing to event the load wll b high on website so we need to remove that useEffect offers return
+    
     return () => window.removeEventListener("scroll", listenToScroll);
   }, []);
 

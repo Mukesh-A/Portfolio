@@ -24,21 +24,12 @@ const About = () => {
       .then((data) => setPost(data))
       .catch(console.error());
   }, []);
-
+  console.log("ab", postData);
   const notify = () => {
     navigator.clipboard.writeText("mukeshabhi08@gmail.com");
     toast("mukeshabhi08@gmail.com copied to Clipboard");
   };
-  // const gitHub = () => {
-  //   console.log("came");
-
-  //   <a
-  //     href="https://github.com/Mukesh-A"
-  //     target="_blank"
-  //     rel="noopener noreferrer"
-  //   ></a>;
-  // };
-
+ 
   return (
     <Container className="about" id="about">
       {/* <div className="about_left"> */}
@@ -65,7 +56,14 @@ const About = () => {
               <FiFigma />
             </li> */}
           </ul>
-          <button className="resume">Resume</button>
+          <button
+            onClick={() =>
+              postData[1].skill[0] && window.open(postData[1].skill[0])
+            }
+            className="resume"
+          >
+            Resume
+          </button>
         </div>
         <span className="about_description">
           // <label>I</label> completed my MCA(8CGPA) at Bangalore Institute of

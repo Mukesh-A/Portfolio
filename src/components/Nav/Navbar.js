@@ -1,5 +1,4 @@
 import React from "react";
-import { Rightbar } from "./Rightbar";
 import Burger from "./Burger";
 
 const Navbar = () => {
