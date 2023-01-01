@@ -4,9 +4,7 @@ import styled from "styled-components";
 const Startup = () => {
   return (
     <Container className="slide-up">
-      <div className="slide-up-inner">
-        <p>Select * from Mukesh</p>
-      </div>
+      <div className="slide-up-inner">Select * from Mukesh</div>
     </Container>
   );
 };
@@ -14,26 +12,22 @@ const Startup = () => {
 export default Startup;
 const Container = styled.div`
   height: 100vh;
-  width: 100%;
- 
-  text-align: center;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
 
   .slide-up-inner {
-    background-color: #0e1212;
-    padding-top: 50vh;
-    
+    width: 22ch;
+    animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
     overflow: hidden;
-    p {
-      animation: 3s slide-up;
-      color: #555;
-      
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    color: #777;
 
-      font-size: 2rem;
-      font-weight: 500;
-      font-style: italic;
-      @media (max-width: 480px) {
-        font-size: 1.3rem;
-      }
+    @media (max-width: 480px) {
+      font-size: 1.3rem;
     }
   }
 `;

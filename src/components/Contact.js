@@ -3,7 +3,6 @@ import logo from "../contact.png";
 import styled from "styled-components";
 
 const Contact = () => {
-  console.log(process.env.REACT_APP_CONTACT);
   return (
     <Container className="contact" id="contact">
       <div className="contact-form">
@@ -45,9 +44,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
 
-  gap: 5rem;
+  gap: 2rem;
   @media (max-width: 480px) {
     flex-direction: column;
+    gap: 10rem;
   }
 
   .contact-form {
@@ -59,7 +59,7 @@ const Container = styled.div`
 
     justify-content: end;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 
     @media (max-width: 480px) {
       width: 100%;
@@ -116,18 +116,18 @@ const Container = styled.div`
 
   .contact-img {
     width: 50%;
-    position: relative;
+    /* position: relative; */
 
     height: 100%;
-
+    display: grid;
+    place-items: end;
+    /* height: 80%; */
     img {
-      position: absolute;
-      bottom: 0;
-      right: 10px;
       width: 35rem;
+      /* height: 80%; */
       -webkit-filter: drop-shadow(0px -22px 100px #682ae9);
       @media (max-width: 480px) {
-        height: 80%;
+        height: 100%;
         width: 100%;
         right: 0;
         /* width: 100%; */

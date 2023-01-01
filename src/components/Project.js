@@ -89,6 +89,7 @@ const Container = styled.div`
   height: auto;
   width: 100vw;
   color: #dbdbdb;
+  /* background: #0000"; */
   background-image: linear-gradient(
     to left,
     rgba(0, 0, 0, 0) 0%,

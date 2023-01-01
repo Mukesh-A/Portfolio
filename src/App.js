@@ -22,7 +22,7 @@ function App() {
     // Wait for 3 seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 5000);
   }, []);
 
   return (
