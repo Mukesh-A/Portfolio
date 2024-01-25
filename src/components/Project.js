@@ -79,7 +79,9 @@ const Project = () => {
                 })}
           </div>
         </div>
-        <p className="bracket_end">﹜<label className="bracket_props">)</label></p>
+        <p className="bracket_end">
+          ﹜<label className="bracket_props">)</label>﹔
+        </p>
       </div>
     </Container>
   );
@@ -105,7 +107,7 @@ const Container = styled.div`
 
     .project--title {
       margin: 1rem;
-      word-spacing: -.1em;
+      word-spacing: -0.1em;
     }
     span {
       color: #dbdbdb;
@@ -137,9 +139,10 @@ const Container = styled.div`
     .bracket_end {
       align-self: flex-end;
       margin-bottom: 3rem;
+      letter-spacing: -0.3em;
     }
-    .bracket_props{
-      color:#dbdbdb;
+    .bracket_props {
+      color: #dbdbdb;
     }
 
     .containers {
