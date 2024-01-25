@@ -32,8 +32,9 @@ const Project = () => {
   return (
     <Container className="project" id="project">
       <div className="project-content">
-        <span>
-          const Projects = (<label className="project_props">Project</label>) ⇒
+        <span className="project--title">
+          {/* const Projects = (<label className="project_props">Project</label>) ⇒ */}
+          Projects . map ( (<label className="project_props">Project</label>) ⇒
         </span>
         <p>﹛</p>
         <div className="containers">
@@ -78,7 +79,7 @@ const Project = () => {
                 })}
           </div>
         </div>
-        <p className="bracket_end">﹜</p>
+        <p className="bracket_end">﹜<label className="bracket_props">)</label></p>
       </div>
     </Container>
   );
@@ -100,20 +101,23 @@ const Container = styled.div`
   .project-content {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
-    
+    padding-top: 40px;
 
+    .project--title {
+      margin: 1rem;
+      word-spacing: -.1em;
+    }
     span {
       color: #dbdbdb;
       font-size: 3rem;
       font-weight: 700;
-
-      @media (max-width: 480px) {
+      /* @media (max-width: 480px) {
         padding: 0.3rem;
-      }
+      } */
     }
     p,
     .bracket_end {
+      /* margin-top:1rem; */
       color: #222;
       font-size: 7rem;
       font-weight: 800;
@@ -132,6 +136,9 @@ const Container = styled.div`
     .bracket_end {
       align-self: flex-end;
       margin-bottom: 3rem;
+    }
+    .bracket_props{
+      color:#dbdbdb;
     }
 
     .containers {

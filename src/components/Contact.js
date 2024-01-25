@@ -26,7 +26,7 @@ const Contact = () => {
             className="feedback-input"
             placeholder="Message"
           ></textarea>
-          <input type="submit" value="SEND" />
+          <input type="submit" value="SEND 🚀" />
         </form>
       </div>
       <div className="contact-img">
