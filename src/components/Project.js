@@ -111,9 +111,10 @@ const Container = styled.div`
       color: #dbdbdb;
       font-size: 3rem;
       font-weight: 700;
-      /* @media (max-width: 480px) {
+      @media (max-width: 480px) {
         padding: 0.3rem;
-      } */
+        font-size: 2.5rem;
+      }
     }
     p,
     .bracket_end {

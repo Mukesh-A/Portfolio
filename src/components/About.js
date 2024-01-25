@@ -24,7 +24,7 @@ const About = () => {
       .then((data) => setPost(data))
       .catch(console.error());
   }, []);
-  console.log("ab", postData);
+  // console.log("ab", postData);
   const notify = () => {
     navigator.clipboard.writeText("mukeshabhi08@gmail.com");
     toast("mukeshabhi08@gmail.com copied to Clipboard");
