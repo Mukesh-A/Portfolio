@@ -109,7 +109,7 @@ const Container = styled.div`
     }
     span {
       color: #dbdbdb;
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 700;
       @media (max-width: 480px) {
         padding: 0.3rem;
