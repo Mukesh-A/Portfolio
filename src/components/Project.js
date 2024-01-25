@@ -80,7 +80,7 @@ const Project = () => {
           </div>
         </div>
         <p className="bracket_end">
-          ﹜<label className="bracket_props">)</label>﹔
+          ﹜<label className="bracket_props">﹚</label>﹔
         </p>
       </div>
     </Container>
