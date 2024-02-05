@@ -98,7 +98,7 @@ const Container = styled.div`
       padding: 0.7rem;
       display: flex;
       gap: 0.7rem;
-      margin: 2.5rem auto;
+      margin: 2rem auto;
       justify-content: center;
       align-items: center;
       width: 27rem;
