@@ -103,11 +103,11 @@ const Container = styled.div`
       align-items: center;
       width: 27rem;
       cursor: pointer;
-      box-shadow: rgba(161, 9, 248, 0.35) 0px 5px 40px;
+      box-shadow: rgba(161, 9, 248, 0.55) 0px 5px 40px;
       @media (max-width: 480px) {
         width: 17rem;
         font-size: 0.7rem;
-        padding: 0.4rem;
+        padding: 0.5rem;
         letter-spacing: 0.03em;
       }
     }
