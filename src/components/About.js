@@ -4,6 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { HiDownload } from "react-icons/hi";
+import { FaLinkedin } from "react-icons/fa";
 import styled from "styled-components";
 import client from "../client";
 import { ToastContainer, toast } from "react-toastify";
@@ -29,7 +30,7 @@ const About = () => {
     navigator.clipboard.writeText("mukeshabhi08@gmail.com");
     toast("mukeshabhi08@gmail.com copied to Clipboard");
   };
- 
+
   return (
     <Container className="about" id="about">
       {/* <div className="about_left"> */}
@@ -52,9 +53,13 @@ const About = () => {
                 onClick={() => window.open("https://github.com/Mukesh-A")}
               />
             </li>
-            {/* <li>
-              <FiFigma />
-            </li> */}
+            <li>
+              <FaLinkedin
+                onClick={() =>
+                  window.open("https://www.linkedin.com/in/mukesh-a/")
+                }
+              />
+            </li>
           </ul>
           <button
             onClick={() =>
