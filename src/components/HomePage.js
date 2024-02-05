@@ -97,18 +97,18 @@ const Container = styled.div`
       border-radius: 5px;
       padding: 0.7rem;
       display: flex;
-
+      gap: 0.7rem;
       margin: 12px auto;
       justify-content: center;
       align-items: center;
       width: 27rem;
       cursor: pointer;
-      box-shadow: rgba(161, 9, 248, 0.35) 0px 5px 20px;
+      box-shadow: rgba(161, 9, 248, 0.35) 0px 5px 40px;
       @media (max-width: 480px) {
-        width: 12rem;
-        font-size: 0.6rem;
+        width: 13rem;
+        font-size: 0.7rem;
         padding: 0.4rem;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.03em;
       }
     }
     .download--icon {
