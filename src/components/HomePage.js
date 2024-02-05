@@ -94,16 +94,16 @@ const Container = styled.div`
       color: #dbdbdb;
       font-weight: 500;
       /* outline: 0.1em inset #777; */
-      border-radius: 5px;
+      border-radius: 10px;
       padding: 0.7rem;
       display: flex;
       gap: 0.7rem;
-      margin: 12px auto;
+      margin: 15px auto;
       justify-content: center;
       align-items: center;
       width: 27rem;
       cursor: pointer;
-      box-shadow: rgba(161, 9, 248, 0.55) 0px 5px 40px;
+      box-shadow: rgba(161, 9, 248, 0.45) 0px 5px 40px;
       @media (max-width: 480px) {
         width: 17rem;
         font-size: 0.8rem;
