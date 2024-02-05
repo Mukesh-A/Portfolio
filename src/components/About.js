@@ -161,12 +161,12 @@ const Container = styled.div`
     .about_icons {
       display: flex;
       align-items: center;
+      /* justify-content: center; */
+      gap: 0.8rem;
       height: 2rem;
-
       .about_icons_ul li {
-        display: inline-block;
-        text-align: center;
-        padding: 1rem;
+        display: inline-flex;
+        padding: 0.5rem;
         font-size: 1.5rem;
         color: #682ae9;
         cursor: pointer;

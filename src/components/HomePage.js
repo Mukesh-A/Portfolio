@@ -98,7 +98,7 @@ const Container = styled.div`
       padding: 0.7rem;
       display: flex;
       gap: 0.7rem;
-      margin: 15px auto;
+      margin: 2.5rem auto;
       justify-content: center;
       align-items: center;
       width: 27rem;
@@ -117,7 +117,7 @@ const Container = styled.div`
       vertical-align: bottom;
       /*  */
       @media (max-width: 480px) {
-        font-size: 0.7rem;
+        font-size: 0.85rem;
       }
     }
 
