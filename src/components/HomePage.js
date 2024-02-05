@@ -23,8 +23,7 @@ const HomePage = () => {
         <span className="main_text">Hi,I'm</span>
         <span className="main_text_name"> {`<Mukesh />`}</span>
         <h3 className="fullstack">FullStack Developer</h3>
-
-        <span
+        <h3
           className="npm"
           onClick={() =>
             postData[1].skill[0] && window.open(postData[1].skill[0])
@@ -32,7 +31,7 @@ const HomePage = () => {
         >
           {`> npm install @mukesh/resume `}
           <HiOutlineDownload className="download--icon" />
-        </span>
+        </h3>
       </div>
       <div className="img-container">
         <img className="img-to-fit" src={logo} alt="Mukesh" />
@@ -64,7 +63,7 @@ const Container = styled.div`
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
-
+    /* border: 1px solid red; */
     letter-spacing: 0.05em;
 
     @media (max-width: 480px) {
@@ -72,7 +71,6 @@ const Container = styled.div`
     }
     .main_text {
       font-weight: 500;
-
       color: #dbdbdb;
     }
     .main_text_name {
@@ -81,18 +79,33 @@ const Container = styled.div`
 
       cursor: pointer;
     }
+
+    .fullstack {
+      color: #777;
+      font-weight: 500;
+      font-size: 1.5rem;
+      padding-left: 0.3rem;
+    }
+
     .npm {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
         Liberation Mono, Courier New, monospace;
       font-size: 1rem;
       color: #dbdbdb;
       font-weight: 500;
-      outline: 1px inset #777;
+      outline: 0.1em inset #777;
       border-radius: 5px;
       padding: 0.7rem;
-      display: inline-block;
+      display: flex;
+
+      margin: 12px auto;
+      justify-content: center;
+      align-items: center;
+      width: 27rem;
       cursor: pointer;
+      box-shadow: rgba(161, 9, 248, 0.35) 0px 5px 20px;
       @media (max-width: 480px) {
+        width: 12rem;
         font-size: 0.6rem;
         padding: 0.4rem;
         letter-spacing: 0.02em;
@@ -108,12 +121,6 @@ const Container = styled.div`
       }
     }
 
-    .fullstack {
-      color: #777;
-      font-weight: 500;
-      font-size: 1.5rem;
-      padding-left: 0.3rem;
-    }
     @media (max-width: 480px) {
       .main_text {
         font-size: 2rem;
