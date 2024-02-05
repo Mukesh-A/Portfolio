@@ -93,9 +93,9 @@ const Container = styled.div`
       display: inline-block;
       cursor: pointer;
       @media (max-width: 480px) {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         padding: 0.4rem;
-        letter-spacing: 0.01em;
+        letter-spacing: 0.02em;
       }
     }
     .download--icon {
