@@ -120,7 +120,7 @@ const Container = styled.div`
       vertical-align: bottom;
       /*  */
       @media (max-width: 480px) {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
       }
     }
 
