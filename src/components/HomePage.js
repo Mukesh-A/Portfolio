@@ -109,7 +109,7 @@ const Container = styled.div`
       @media (max-width: 480px) {
         width: 18rem;
         font-size: 0.9rem;
-        padding: 0.5rem;
+        padding: 0.4rem;
         letter-spacing: 0.03em;
       }
     }
