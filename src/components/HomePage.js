@@ -3,6 +3,7 @@ import logo from "../img3.png";
 import styled from "styled-components";
 import { HiOutlineDownload } from "react-icons/hi";
 import client from "../client";
+
 const HomePage = () => {
   const [postData, setPost] = useState(null);
 
@@ -98,21 +99,22 @@ const Container = styled.div`
       padding: 0.7rem;
       display: flex;
       gap: 0.7rem;
-      margin: 1rem auto;
+      margin: 1.5rem auto;
       justify-content: center;
       align-items: center;
       width: 27rem;
+      height: 2.5rem;
       cursor: pointer;
-      box-shadow: rgba(161, 9, 248, 0.45) 0px 5px 40px;
+      box-shadow: rgba(161, 9, 248, 0.55) 0px 5px 50px;
       @media (max-width: 480px) {
-        width: 17rem;
-        font-size: 0.8rem;
+        width: 18rem;
+        font-size: 0.9rem;
         padding: 0.5rem;
         letter-spacing: 0.03em;
       }
     }
     .download--icon {
-      color: #777;
+      color: #888;
       font-size: 1.1rem;
       vertical-align: bottom;
       /*  */
