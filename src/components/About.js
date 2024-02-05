@@ -167,12 +167,12 @@ const Container = styled.div`
       .about_icons_ul li {
         display: inline-flex;
         padding: 0.5rem;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         color: #682ae9;
         cursor: pointer;
         @media (max-width: 480px) {
           padding: 0.3rem;
-          font-size: 1.3rem;
+          font-size: 1.5rem;
         }
       }
       .resume {
