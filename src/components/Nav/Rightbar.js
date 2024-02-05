@@ -6,7 +6,7 @@ export const Rightbar = ({ open }) => {
     <Ul open={open}>
       <li>
         <Link activeClass="active" smooth spy to="hero">
-          mukesh. js()
+          mukesh. js
         </Link>
       </li>
       <li>
