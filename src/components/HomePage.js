@@ -108,7 +108,7 @@ const Container = styled.div`
       box-shadow: rgba(161, 9, 248, 0.55) 0px 5px 50px;
       @media (max-width: 480px) {
         width: 18rem;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         padding: 0.4rem;
         letter-spacing: 0.03em;
       }
