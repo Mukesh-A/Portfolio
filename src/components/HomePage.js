@@ -23,6 +23,7 @@ const HomePage = () => {
         <span className="main_text">Hi,I'm</span>
         <span className="main_text_name"> {`<Mukesh />`}</span>
         <h3 className="fullstack">FullStack Developer</h3>
+
         <span
           className="npm"
           onClick={() =>
@@ -30,7 +31,7 @@ const HomePage = () => {
           }
         >
           {`> npm install @mukesh/resume `}
-          <HiOutlineDownload size={18} className="download--icon" />
+          <HiOutlineDownload className="download--icon" />
         </span>
       </div>
       <div className="img-container">
@@ -92,15 +93,21 @@ const Container = styled.div`
       display: inline-block;
       cursor: pointer;
       @media (max-width: 480px) {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
+        padding: 0.4rem;
+        letter-spacing: 0.01em;
       }
     }
     .download--icon {
       color: #777;
-
+      font-size: 1.1rem;
       vertical-align: bottom;
-      font-size: 1rem;
+      /*  */
+      @media (max-width: 480px) {
+        font-size: 0.7rem;
+      }
     }
+
     .fullstack {
       color: #777;
       font-weight: 500;
