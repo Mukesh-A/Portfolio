@@ -93,7 +93,7 @@ const Container = styled.div`
       font-size: 1rem;
       color: #dbdbdb;
       font-weight: 500;
-      outline: 0.1em inset #777;
+      /* outline: 0.1em inset #777; */
       border-radius: 5px;
       padding: 0.7rem;
       display: flex;
